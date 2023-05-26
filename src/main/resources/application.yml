@@ -39,18 +39,14 @@ spring:
       on-profile: dev
 
   datasource:
-    url: jdbc:h2:mem:test
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
+    url: ENC(HjGAl+3ByoUz40kq96fHJkfbRb1KLOKsAPY9rfTwZzh87MajHv93mNWvR8/x77e78wgcK4puCM3cIA5cQPwU2RZoTCZJuGs9qq6EVnuQScxDppTx3sqrG0iyk0iSrNlIYODxwRQGfCU/mQOtTsXsPCJoe9u1ONvu7gumbdNRR2WFdsIrdp1MP9rpV4IuL6VEcVuqv0UnV0vgidP1At+P2U4gYgPXieUI8/W9LUJ+R3I=)
+    username: ENC(+vW5yrk0CCdL4xqCOkLskg==)
+    password: ENC(po3GvvQ8HfQ4e7E8IEH1ww==)
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     hibernate:
       ddl-auto: create
-
-  h2:
-    console:
-      enabled: true
 
 logging:
   level:
@@ -83,7 +79,7 @@ spring:
       on-profile: test
 
   datasource:
-    url: jdbc:h2:mem:test
-    username: sa
-    password:
+    url: ENC(km2rsIDCi0APctYPsR6jYbdxz6Vf56dKAjl2z6sSkjA=)
+    username: ENC(ep9jaADZ8tcJ3N6PJG926g==)
+    password: ENC(c+jq/tZuMui8PrY7Y7UMFw==)
     driver-class-name: org.h2.Driver
