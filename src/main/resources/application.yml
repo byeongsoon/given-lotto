@@ -39,7 +39,7 @@ spring:
       on-profile: dev
 
   datasource:
-    url: ENC(HjGAl+3ByoUz40kq96fHJkfbRb1KLOKsAPY9rfTwZzh87MajHv93mNWvR8/x77e78wgcK4puCM3cIA5cQPwU2RZoTCZJuGs9qq6EVnuQScxDppTx3sqrG0iyk0iSrNlIYODxwRQGfCU/mQOtTsXsPCJoe9u1ONvu7gumbdNRR2WFdsIrdp1MP9rpV4IuL6VEcVuqv0UnV0vgidP1At+P2U4gYgPXieUI8/W9LUJ+R3I=)
+    url: ENC(81UAB4bnEVpRUHBhFiUIdYGp5hkGLBckIk5dWiJacpO3SGtdC92mUyRRNxWtMCIySuEtaRNURq053fYHtq+QAXWE7weLX3vgEy81M7MmCRkQ6yem8IL6V4RIdv9bVMtpBJZ5TLU34jDeCGtV1im2Clv5QgZTW7mohJAbmKhrKEdkuOeipO2R871n/2ISemjYlJoIPCGCAvkxwplV827n7DUQmRyKh7/MSlp7pagassA=)
     username: ENC(+vW5yrk0CCdL4xqCOkLskg==)
     password: ENC(po3GvvQ8HfQ4e7E8IEH1ww==)
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -58,11 +58,11 @@ spring:
     activate:
       on-profile: prod
 
-#  datasource:
-#    url:
-#    username:
-#    password:
-#    driver-class-name:
+  datasource:
+    url: ENC(wY1unTiIDe8g/XXqe1LneVVfrFEJCQKrY4/7I8USknu4B+2LlQELqiI7CQOdes+9NI8cvkkkV564iqIFzOmlre/K1maE0CacII61Ivw/1X2ib71Ety3+votkVpcfzImUbd00HtTWxb0c5Q42EJtaiJA87C0UhciypqciomEDHt4Nze/Twxfy6Xf9KJO85BEGmro7v4NSYvpqz+Z6J/X2oBqT9P9WR0SmIVnaKR4217U=)
+    username: ENC(jw/0saUfJD78ICVT3scMag==)
+    password: ENC(aOdVeNRO2fv01pzCY6AO7w==)
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     hibernate:
