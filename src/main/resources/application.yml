@@ -1,0 +1,85 @@
+spring:
+  profiles:
+    group:
+      dev:
+        - dev
+        - common
+      prod:
+        - prod
+        - common
+      test:
+        - test
+        - common
+
+---
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  config:
+    activate:
+      on-profile: common
+  application:
+    name: GIVEN-LOTTO
+  jpa:
+    properties:
+      hibernate:
+        default_batch_fetch_size: 1000
+        format_sql: true
+        show_sql: true
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  datasource:
+    url: ENC(81UAB4bnEVpRUHBhFiUIdYGp5hkGLBckIk5dWiJacpO3SGtdC92mUyRRNxWtMCIySuEtaRNURq053fYHtq+QAXWE7weLX3vgEy81M7MmCRkQ6yem8IL6V4RIdv9bVMtpBJZ5TLU34jDeCGtV1im2Clv5QgZTW7mohJAbmKhrKEdkuOeipO2R871n/2ISemjYlJoIPCGCAvkxwplV827n7DUQmRyKh7/MSlp7pagassA=)
+    username: ENC(+vW5yrk0CCdL4xqCOkLskg==)
+    password: ENC(po3GvvQ8HfQ4e7E8IEH1ww==)
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+logging:
+  level:
+    org.hibernate.type: trace
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+  datasource:
+    url: ENC(Hzx8YNRmoAgMQl2+ugqwW4gmtFEreFddwwIwUm92EUCpcW7qaobgRMQBFgpkKVxe/dY+q6aHrbY8jIh+95QzxAnl54DYBvHARkv7O2xyXiqF6k2VU6VOprVgVnWLOmpjWSYZhI7Gj//EK2C5ofj93UvJcjyiP07eWg3KJRdxgltiWWBzXZ61SN5+3yHS4NPnjcN6JwXW7+iLMdBymaynvTe3VAMoi/lMcDdwdl/maQ0=)
+    username: ENC(jw/0saUfJD78ICVT3scMag==)
+    password: ENC(aOdVeNRO2fv01pzCY6AO7w==)
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+logging:
+  level:
+    org.hibernate.type: info
+
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+
+  datasource:
+    url: ENC(km2rsIDCi0APctYPsR6jYbdxz6Vf56dKAjl2z6sSkjA=)
+    username: ENC(ep9jaADZ8tcJ3N6PJG926g==)
+    password: ENC(c+jq/tZuMui8PrY7Y7UMFw==)
+    driver-class-name: org.h2.Driver
